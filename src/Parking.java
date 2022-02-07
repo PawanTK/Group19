@@ -1,5 +1,5 @@
 public class Parking {
-    private int car=0,bike=0,rikshaw=0;
+    private int car=0,bike=0,van=0,other=0;
 
     public int getCar() {
         return car;
@@ -17,18 +17,21 @@ public class Parking {
         this.bike = bike;
     }
 
-    public int getRikshaw() {
-        return rikshaw;
+    public int getvan() {
+        return van;
     }
 
-    public void setRikshaw(int rikshaw) {
-        this.rikshaw = rikshaw;
-    }
+    public void setvan(int van) { this.van = van; }
+
+    public int getother() { return other; }
+
+    public void setother(int other) {this.other = other;}
     public void delete()
     {
         car=0;
         bike=0;
-        rikshaw=0;
+        van=0;
+        other=0;
     }
 }
 
